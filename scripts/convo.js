@@ -6,13 +6,11 @@ function generateConvo(level, convo, lang1, lang2){
     
     let cur = conversations[level][convo];
     let ret = [];
-    console.log(cur);
+
     for(let i = 0; i < cur.length; i++){
         let pair = [];
         
-        console.log(i,cur[i])
         const botDialogue  = randomChoice(cur[i]);
-        console.log(botDialogue);
 
         pair.push([
             botDialogue[lang1], // sentence in bot language
@@ -60,21 +58,6 @@ function generateConvo(level, convo, lang1, lang2){
     return ret;
 }
 
-/* curConvo structure
-
-[
-    prompt-response pair
-    [
-        prompt
-        [dialogue in learning language, dialogue in known language]
-
-        response
-        [ dialogue in ]
-    ]
-
-]
-
-*/
 
 
 let curConvo = [];
@@ -101,7 +84,7 @@ function displayConvo(){
             setTimeout(function(){
 
                 document.getElementById("dialogueHolder").style["display"] = "none";
-                document.getElementById("progressBar").style["display"] = "none";
+                document.getElementById("barHolder").style["display"] = "none";
                 document.getElementById("convoComplete").style["display"] = "block";
                 document.getElementById("convoPage").style["background"] = "transparent";
                 document.getElementById("convoPage").style.cssText= `
