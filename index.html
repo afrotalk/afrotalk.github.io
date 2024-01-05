@@ -94,14 +94,16 @@
                 <div id="languageHolder">
             </div>
 
+        <script src="scripts/choose-language.js"></script>
         <script src="scripts/local-storage-vars.js"></script>
         <script src="scripts/page-system.js"></script>
         <script src="scripts/translate.js"></script>
         <script src="scripts/app.js"></script>
         <script src="scripts/convo.js"></script>
         <script src="scripts/convo-select.js"></script>
-        <script>openPage("convoSelectPage")</script>
-        <script src="scripts/choose-language.js"></script>
+        <script>if(!choosingLang)openPage("convoSelectPage")</script>
+        
+        
         
 
         

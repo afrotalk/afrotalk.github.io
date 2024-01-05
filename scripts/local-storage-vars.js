@@ -1,6 +1,8 @@
+let choosingLang = false;
 // languages
 if(localStorage.getItem("knownLang") == null || localStorage.getItem("learnLang") == null){
     chooseLanguage();
+    choosingLang = true;
 }
 
 // scores for convos and cards
