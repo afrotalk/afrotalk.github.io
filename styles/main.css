@@ -28,14 +28,15 @@ body{
     top:0;
     left:0;
     right:0;
-    padding:20px;
-    background:linear-gradient(to bottom, var(--bg-light-blue) 80%, transparent);
+    padding:10px;
+    background:var(--bg-light-blue);
     z-index:999;
+    border-bottom: 4px solid var(--light-transp-blue);
     
 }
 
 .logo{
-    margin:0;
+    margin:20px;
     cursor: pointer;
 }
 
@@ -375,4 +376,13 @@ body{
 #endConvoButton{
     width: 200px;
     margin:auto;
+}
+
+@media only screen and (max-width: 950px) {
+    #convoPage{
+        border:none;
+        box-shadow: none;
+        background-color: transparent;
+        min-height: 100vh;
+    }
 }
