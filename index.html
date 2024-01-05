@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:400,600,800" rel="stylesheet">
+
+        <!-- our stylesheet-->
+        <link rel="stylesheet" href="styles/main.css">
+
+        <link rel="icon" href="assets/logo/logo.png">
+        
+        <title>AfroTalk | Learn African Languages</title>
+         
+    </head>
+    
+    <body>
+
+
+            <div id="navbar">
+                <h2 class="logo" onclick="fadeReload()"><img src="assets/logo/logo.png">AfroTalk</h2>
+            </div>    
+
+
+            <div id="fadeCover"></div>
+
+            <div id="convoPage" class="page">
+                <div id="progressBar">
+                    <div id="progressBarPercent">
+                        <div></div>
+                    </div>
+                </div>
+                <div id="dialogueHolder">
+                    <div id="botDialogue">
+                        <img id="botAvatar" src="assets/faces/mimi.png">
+                        <p id="botText" class="textOption"></p>
+                    
+                    </div>
+                    <br><br>
+
+                    <div id="userDialogue">
+                        <p id="choosePrompt"></p>
+                        <p class="textOption" id="option1"></p>
+                        <p class="textOption" id="option2"></p>
+                        <p class="textOption" id="option3"></p>
+                        <p class="textOption" id="option4"></p>
+                    </div>
+
+                    <div style="display: flex;margin-top:60px;">
+                        <button id="continueButton" onclick="nextDialogue()">Continue</button>
+                        <button id="hintButton" onclick="toggleTranslate(true)"><img src="assets/svg/hint-bulb-gray.svg"></button>
+                    </div>
+                </div>
+
+                <div id="convoComplete" style="display: none;">
+                    
+                    
+                    <img id="completeStars" src="assets/other/2star.png" style="opacity: 0;">
+                    <h1 id="completeHeader" style="opacity: 0;">Complete!</h1>
+                    
+                    <br><br><br>
+                    
+                    <div style="display: flex;">
+                        <button id="endConvoButton" onclick="fadeReload()" style="opacity: 0;">Continue</button>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+            <!-- CONVERSATION SELECT PAGE -->
+            <div id="convoSelectPage" class="page">
+                
+                <div class="pageHeader">
+                    <h1><img src="assets/navigation/convo.png"><span id="convoHeader"></span></h1>
+                    <p id="convoDesc">Practice your speaking skills in real-life situations!</p>
+                    
+                </div>
+
+                <div id="selectHolder">
+
+                </div>
+            </div>
+
+            <!-- LANGUAGE SELECT PAGE -->
+            <div id="languagePage">
+                <br><br><br>
+                <div id="languageHolder">
+            </div>
+
+        <script src="scripts/local-storage-vars.js"></script>
+        <script src="scripts/page-system.js"></script>
+        <script src="scripts/translate.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/convo.js"></script>
+        <script src="scripts/convo-select.js"></script>
+        <script>openPage("convoSelectPage")</script>
+        <script src="scripts/choose-language.js"></script>
+        
+
+        
+        
+    </body>
+    
+</html>
