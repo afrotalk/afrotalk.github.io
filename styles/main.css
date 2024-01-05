@@ -378,11 +378,38 @@ body{
     margin:auto;
 }
 
+
+.mobile{
+    display: none;
+}
 @media only screen and (max-width: 950px) {
+    .mobile{
+        display: block;
+    }
     #convoPage{
         border:none;
         box-shadow: none;
         background-color: transparent;
-        min-height: 100vh;
+    }
+
+    #barHolder{
+        position: fixed;
+        z-index: 9;
+        top:0;
+        left:0;
+        right:0;
+        padding: 10px;
+        background-color: var(--bg-light-blue);
+        border-bottom: 4px solid var(--light-transp-blue);
+        border-radius: 15px;
+        display: flex;
+    }
+
+    #dialogueHolder{
+        margin-top: 70px;
+    }
+
+    #progressBar{
+        margin:0;      
     }
 }

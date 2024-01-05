@@ -29,10 +29,14 @@
             <div id="fadeCover"></div>
 
             <div id="convoPage" class="page">
-                <div id="progressBar">
-                    <div id="progressBarPercent">
-                        <div></div>
+                <div id="barHolder">
+                    <div id="progressBar">
+                        <div id="progressBarPercent">
+                            <div></div>
+                        </div>
                     </div>
+
+                    <img id="closeConvo" onclick="fadeReload()" src="assets/svg/close.svg" class="mobile" style="padding-left:10px">
                 </div>
                 <div id="dialogueHolder">
                     <div id="botDialogue">
@@ -74,7 +78,6 @@
 
             <!-- CONVERSATION SELECT PAGE -->
             <div id="convoSelectPage" class="page">
-                <h2 class="logo" onclick="fadeReload()"><img src="assets/logo/logo.png">AfroTalk</h2>
                 <div class="pageHeader">
                     <h1><span id="convoHeader"></span></h1>
                     <p id="convoDesc">Practice your speaking skills in real-life situations!</p>
@@ -87,7 +90,7 @@
             </div>
 
             <!-- LANGUAGE SELECT PAGE -->
-            <div id="languagePage">
+            <div id="languagePage" class="page">
                 <br><br><br>
                 <div id="languageHolder">
             </div>
