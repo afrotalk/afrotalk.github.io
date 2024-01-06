@@ -240,6 +240,7 @@ function nextDialogue(){
             dialogueHolder.style["transition"] = ".6s";
             dialogueHolder.style["transform"] = "";
             if(curInd != curConvo.length)dialogueHolder.style["opacity"] = "1";
+            document.documentElement.scrollTop = 0;
 
         },50);
         
@@ -331,7 +332,14 @@ function startConvo(level, convo, lang1, lang2){
 
     document.getElementById("botAvatar").setAttribute("src",heads[level]);
 
+
     displayConvo();
+
+    // hide the navbar
+    setTimeout(function(){
+        document.getElementById("navbar").style["display"] = "none";
+        document.getElementById("closeButton").style["display"] = "";
+    },FADESPEED);
 }
 
 

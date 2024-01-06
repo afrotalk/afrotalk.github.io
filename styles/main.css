@@ -21,18 +21,47 @@ body{
     color:var(--font-color);
     font-family: 'Poppins',Arial;
 }
+/* GENERAL */
 
+/* close button */
+#closeButton{
+    margin:20px;
+    margin-left:auto;
+    margin-bottom:40px;
+    width: 50px;
+    cursor:pointer;
+    display: block;
+}
+
+/* navbar */
 #navbar{
-    display: flex;
     position: sticky;
+    display: flex;
     top:0;
     left:0;
     right:0;
     padding:10px;
     background:var(--bg-light-blue);
-    z-index:999;
+    z-index:99;
     border-bottom: 4px solid var(--light-transp-blue);
-    
+}
+
+#navbarContent{
+    max-width: 500px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+}
+
+#navbar img{
+    width: 50px;
+}
+
+#navbarContent div{
+    width: 5px;
+    background-color: var(--light-transp-blue);
+    border-radius: 5px;
 }
 
 .logo{
@@ -54,7 +83,7 @@ body{
     right:0;
     background:var(--bg-light-blue);
     position: fixed;
-    z-index:99;
+    z-index:999;
 }
 
 /* GENERAL */
@@ -386,6 +415,10 @@ body{
     .mobile{
         display: block;
     }
+    .desktop{
+        display: none !important;
+    }
+
     #convoPage{
         border:none;
         box-shadow: none;
@@ -411,5 +444,9 @@ body{
 
     #progressBar{
         margin:0;      
+    }
+
+    #navbar{
+        border-radius: 15px;
     }
 }
