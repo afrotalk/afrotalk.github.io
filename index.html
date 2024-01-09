@@ -42,6 +42,30 @@
 
             <img id="closeButton" onclick="fadeReload()" src="assets/svg/close.svg" style="display: none;" class="desktop">
 
+
+            <!-- VOCAB PAGE -->
+            <div id="vocabPage" class="page">
+                <div id="barHolderVocab">
+                    <div id="progressBarVocab">
+                        <div id="progressBarPercentVocab">
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <img id="closeConvoVocab" onclick="fadeReload()" src="assets/svg/close.svg" class="mobile" style="padding-left:10px">
+                </div>
+
+                <h2 id="vocabWord">How do you say: "Blah"</h2>
+                <div id="vocabOptions">
+                    <p id="vocabOpt1">Bloo</p>
+                    <p id="vocabOpt2">Plap</p>
+                    <p id="vocabOpt3">Skloo</p>
+                    <p id="vocabOpt4">Sploo</p>
+                </div>
+
+                <button id="continueButtonVocab" onclick="nextVocab()">Continue</button>
+            </div>
+
             <!-- CONVERSATION PAGE -->
             <div id="convoPage" class="page">
                 <div id="barHolder">
@@ -119,7 +143,10 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/convo.js"></script>
         <script src="scripts/convo-select.js"></script>
-        <script>if(!choosingLang)openPage("convoSelectPage")</script>
+        <script src="scripts/vocab-list.js"></script>
+        <script src="scripts/vocab.js"></script>
+        <script>//if(!choosingLang)openPage("convoSelectPage")</script>
+
         
         
         

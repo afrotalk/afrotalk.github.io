@@ -206,9 +206,31 @@ body{
     margin:0;
 }
 
+/* VOCAB PAGE */
+#vocabWord{
+    font-weight: 600;
+    text-align: center;
+}
+
+
+#vocabOptions p{
+    
+    display: block;
+    margin:auto;
+    padding: 10px;
+    /* background: var(--light-transp-blue); */
+    color: var(--lighter-font-color);
+    border-radius: 15px;
+    font-weight: 600;
+    border: 3px solid var(--light-transp-blue);
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition:.25s;
+}
+
 /* CONVO PAGE */
 
-#convoPage{
+#convoPage,#vocabPage{
     width: 80%;
     max-width: 500px;
     margin:auto;
@@ -222,7 +244,7 @@ body{
 }
 
 /*progress bar */
-#progressBar{
+#progressBar,#progressBarVocab{
     width:100%;
     border:5px solid;
     border-radius: 100px;
@@ -232,7 +254,7 @@ body{
 }
 
 
-#progressBarPercent{
+#progressBarPercent,#progressBarPercentVocab{
     padding:3px;
     padding-bottom:6px;
     padding-right: 5px;
@@ -242,7 +264,7 @@ body{
     width: calc(100% - 9px);
 }
 
-#progressBarPercent div{
+#progressBarPercent div, #progressBarPercentVocab div{
     width: 10px;
     height: 10px;
     border-radius: 5px;
@@ -347,7 +369,7 @@ body{
     margin-left: auto;
 }
 
-#userDialogue .textOption:hover{
+#userDialogue .textOption:hover, #vocabOptions p:hover{
     /*transform: translate(0,-5px);
     /*opacity: .75;*/
     background:var(--light-transp-blue);
@@ -357,7 +379,7 @@ body{
 
 
 
-#continueButton,#endConvoButton{
+#continueButton,#endConvoButton,#continueButtonVocab{
     display: block;
     width: -webkit-fill-available;
     padding: 10px;
@@ -419,13 +441,13 @@ body{
         display: none !important;
     }
 
-    #convoPage{
+    #convoPage,#vocabPage{
         border:none;
         box-shadow: none;
         background-color: transparent;
     }
 
-    #barHolder{
+    #barHolder,#barHolderVocab{
         position: fixed;
         z-index: 9;
         top:0;
@@ -442,11 +464,15 @@ body{
         margin-top: 70px;
     }
 
-    #progressBar{
+    #progressBar,#progressBarVocab{
         margin:0;      
     }
 
     #navbar{
         border-radius: 15px;
+    }
+
+    #vocabWord{
+        margin-top:50px;
     }
 }
