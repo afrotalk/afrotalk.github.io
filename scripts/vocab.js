@@ -31,12 +31,13 @@ function displayVocab(){
     curWrong = 0;
 
     // set progress bar
-    let barWidth = Math.max(.05, (2*vocab[setName].length - setOrder.length)/(2*vocab[setName].length)) * 100;
+    let barWidth = Math.max(.0, (2*vocab[setName].length - setOrder.length)/(2*vocab[setName].length)) * 100;
     document.getElementById("progressBarPercentVocab").style["width"] = barWidth + "%";
-
     
-    if(barWidth == 100){ // we've done all the vocab words
 
+
+    if(barWidth == 100){ // we've done all the vocab words
+        //document.getElementById("vocabWord").style["display"] = "none";
         setTimeout(function(){
             openPage("vocabPage");
             setTimeout(function(){
@@ -70,6 +71,9 @@ function displayVocab(){
 
         return;
     }
+
+    
+    document.getElementById("vocabWord").style["opacity"] = 1;
 
     // reset CSS on answer options
     for(let i = 1; i <= 4; i++) document.getElementById("vocabOpt" + i ).style.cssText = "";
@@ -176,7 +180,6 @@ function nextVocab(){
     document.getElementById("vocabOptions").style["opacity"] = 0;
     setTimeout(function(){
         displayVocab();
-        document.getElementById("vocabWord").style["opacity"] = 1;
     },300);
     
 }
