@@ -212,6 +212,9 @@ body{
     text-align: center;
 }
 
+#vocabOptions{
+    transition:.3s;
+}
 
 #vocabOptions p{
     
@@ -379,7 +382,7 @@ body{
 
 
 
-#continueButton,#endConvoButton,#continueButtonVocab{
+#continueButton,.endButton,#continueButtonVocab{
     display: block;
     width: -webkit-fill-available;
     padding: 10px;
@@ -395,14 +398,14 @@ body{
     cursor: pointer;
 }
 
-#continueButton:hover,#endConvoButton:hover{
+#continueButton:hover,.endButton:hover{
     opacity: .7;
     transform: translate(0,-10px);
 }
 
 /* convo complete */
 
-#completeStars{
+#completeStars,#completeStarsVocab{
     width: 200px;
     display: block;
     margin:auto;
@@ -410,7 +413,7 @@ body{
     transition: .5s;
 }
 
-#completeHeader{
+#completeHeader,#completeHeaderVocab{
     text-align: center;
     display: block;
     margin:auto;
@@ -424,7 +427,7 @@ body{
 }
 
 
-#endConvoButton{
+.endButton{
     width: 200px;
     margin:auto;
 }

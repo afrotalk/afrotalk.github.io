@@ -4,7 +4,7 @@ const vocab = {
         ["Goodbye","Kwaheri","O dabọ","Ka ọ dị"],
         ["Please","Tafadhali","Jowo","Biko"],
         ["Thank you","Asante","E dupe","Daalụ"],
-        ["Sorry","Pole","Ma binu","Ndo"],
+        ["Sorry","Pole","E ma binu","Ndo"],
         ["Yes","Ndiyo","Bẹẹni","Ee"],
         ["No","Hapana","Rara","Mba"],
         ["Who?","Nani?","Tani?","Onye?"],

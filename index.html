@@ -45,25 +45,42 @@
 
             <!-- VOCAB PAGE -->
             <div id="vocabPage" class="page">
-                <div id="barHolderVocab">
-                    <div id="progressBarVocab">
-                        <div id="progressBarPercentVocab">
-                            <div></div>
+                <div id="vocabGameplay">
+                    <div id="barHolderVocab">
+                        <div id="progressBarVocab">
+                            <div id="progressBarPercentVocab">
+                                <div></div>
+                            </div>
                         </div>
+
+                        <img id="closeConvoVocab" onclick="fadeReload()" src="assets/svg/close.svg" class="mobile" style="padding-left:10px">
                     </div>
 
-                    <img id="closeConvoVocab" onclick="fadeReload()" src="assets/svg/close.svg" class="mobile" style="padding-left:10px">
+                    <h2 id="vocabWord">How do you say: "Blah"</h2>
+                    <div id="vocabOptions">
+                        <p id="vocabOpt1">Bloo</p>
+                        <p id="vocabOpt2">Plap</p>
+                        <p id="vocabOpt3">Skloo</p>
+                        <p id="vocabOpt4">Sploo</p>
+                    </div>
+
+                    <button id="continueButtonVocab" onclick="nextVocab()">Continue</button>
                 </div>
 
-                <h2 id="vocabWord">How do you say: "Blah"</h2>
-                <div id="vocabOptions">
-                    <p id="vocabOpt1">Bloo</p>
-                    <p id="vocabOpt2">Plap</p>
-                    <p id="vocabOpt3">Skloo</p>
-                    <p id="vocabOpt4">Sploo</p>
+                <div id="vocabComplete" style="display: none;">
+                    
+                    
+                    <img id="completeStarsVocab" src="assets/other/2star.png" style="opacity:0">
+                    <h1 id="completeHeaderVocab" style="opacity: 0;">Complete!</h1>
+                    
+                    <br><br><br>
+                    
+                    <div style="display: flex;">
+                        <button id="endVocabButton" class="endButton" onclick="fadeReload()" style="opacity: 0;">Continue</button>
+                    </div>
+                    
                 </div>
 
-                <button id="continueButtonVocab" onclick="nextVocab()">Continue</button>
             </div>
 
             <!-- CONVERSATION PAGE -->
@@ -102,13 +119,13 @@
                 <div id="convoComplete" style="display: none;">
                     
                     
-                    <img id="completeStars" src="assets/other/2star.png" style="opacity: 0;">
+                    <img id="completeStars" src="assets/other/2star.png" style="opacity:0;">
                     <h1 id="completeHeader" style="opacity: 0;">Complete!</h1>
                     
                     <br><br><br>
                     
                     <div style="display: flex;">
-                        <button id="endConvoButton" onclick="fadeReload()" style="opacity: 0;">Continue</button>
+                        <button class="endButton" onclick="fadeReload()" style="opacity: 0;">Continue</button>
                     </div>
                     
                 </div>

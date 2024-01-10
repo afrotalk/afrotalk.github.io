@@ -115,7 +115,7 @@ function displayConvo(){
 
 
                 setTimeout(function(){
-                    document.getElementById("completeStars").style.opacity = "1";
+                    document.getElementById("completeStars").style["opacity"] = "";
                     setTimeout(function(){
                         document.getElementById("completeHeader").style.opacity = "1";
                         setTimeout(function(){document.getElementById("endConvoButton").style.opacity = "1";},600);
