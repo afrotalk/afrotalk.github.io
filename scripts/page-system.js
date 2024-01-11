@@ -2,6 +2,12 @@ const FADESPEED = 600;
 const fadeCover = document.getElementById("fadeCover");
 fadeCover.style["transition"] = (FADESPEED/1000) + "s";
 
+
+const pageIcons = {
+    "vocabPage":"navbarVocab",
+    "convoPage":"navbarConvo"
+}
+
 function openPage(page){
     
     fadeCover.style["opacity"] = 1;
