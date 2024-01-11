@@ -56,6 +56,28 @@ function displayVocab(){
                     box-shadow:none;
                 `;
 
+                // calculate score
+                let missed = 0;
+                let total = 0;
+                for(let i in missedQuestions){
+                    if(missedQuestions[i] == 1)missed++;
+                    total++;
+                }
+
+                let score = 1 - (missed/total);
+
+                if(score <= .25){
+                    document.getElementById("completeStarsVocab").setAttribute("src","assets/other/1star.png");
+                    setScore(setName,1);
+                }
+                else if(score >= .9){
+                    document.getElementById("completeStarsVocab").setAttribute("src","assets/other/3star.png");
+                    setScore(setName,3);
+                }
+                else setScore(setName,2);
+
+
+
                 setTimeout(function(){
                     document.getElementById("completeStarsVocab").style["opacity"] = "";
                     setTimeout(function(){
@@ -170,7 +192,7 @@ function pickVocabChoice(choice, correct){
     document.getElementById("progressBarPercentVocab").style["background"] = "rgb(176 176 176)";
 
     // mark word as incorrect
-    missedQuestions[setOrder[0][parseInt(localStorage.getItem("knownLang"))]] = 1;
+    missedQuestions[setOrder[0][0][parseInt(localStorage.getItem("knownLang"))]] = 1;
     curWrong = 1;
 }
 

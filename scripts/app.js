@@ -55,7 +55,7 @@ const conversations = {
         [
             [
                 ["Hey! Do you have any siblings?", "Habari! Je, una ndugu au dada?","Hey! Ṣe o ni eyikeyi tegbotaburo?","Hey! Ị nwere ụmụnne ọ bụla?"],
-                ["Hello! Do you have siblings?", "Habari! Je, una ndugu au dada?","Pẹlẹ o! Ṣe o ni awọn tegbotaburo?","Nnọọ! Ị nwere ụmụnne?"]
+                ["Hello! Do you have siblings?", "Habari! Je, una ndugu au dada?","Ẹ̀nlẹ̀ o! Ṣe o ni awọn tegbotaburo?","Nnọọ! Ị nwere ụmụnne?"]
             ],
             [
                 ["Yes, I have two older sisters! How about you?", "Ndiyo, nina dada wawili wakubwa! Wewe je?","Bẹẹni, Mo ni awọn arabinrin agbalagba meji! Iwo na nko?","Ee, enwere m ụmụnne nwanyị abụọ tọrọ! Kedu maka gị?"],
@@ -88,7 +88,7 @@ const conversations = {
             //1
             [
                 ["Hey, do you play sports?","Hujambo, unacheza michezo?","Hey, ṣe o ṣe ere idaraya?","Hey, ị na-egwu egwuregwu?"],
-                ["Hello! do you like sports?","Habari! unapenda michezo?","Pẹlẹ o! ṣe o fẹran awọn ere idaraya?","Nnọọ! egwuregwu na-amasị gị?"]
+                ["Hello! do you like sports?","Habari! unapenda michezo?","Ẹ̀nlẹ̀ o! ṣe o fẹran awọn ere idaraya?","Nnọọ! egwuregwu na-amasị gị?"]
             ],
             [
                 ["I really like basketball! How about you?","Napenda sana mpira wa vikapu! Je wewe?","Mo fẹran bọọlu inu agbọn gaan! Iwo na nko?","Basketball na-amasị m nke ukwuu! Kedu maka gị?"],

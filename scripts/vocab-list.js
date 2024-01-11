@@ -1,17 +1,17 @@
 const vocab = {
     "Common Phrases":[
-        ["Hello","Habari","Pẹlẹ o","Nnọọ"],
+        ["Hello","Habari","Ẹ̀nlẹ̀ o","Nnọọ"],
         ["Goodbye","Kwaheri","O dabọ","Ka ọ dị"],
         ["Please","Tafadhali","Jowo","Biko"],
         ["Thank you","Asante","E dupe","Daalụ"],
         ["Sorry","Pole","E ma binu","Ndo"],
         ["Yes","Ndiyo","Bẹẹni","Ee"],
         ["No","Hapana","Rara","Mba"],
-        ["Who?","Nani?","Tani?","Onye?"],
-        ["What?","Nini?","Kini?","Kedu?"],
-        ["When?","Lini?","Nigbawo?","Mgbe ole?"],
-        ["Where?","Wapi?","Nibo?","Ebee?"],
-        ["Why?","Kwa nini?","Kí nìdí?","Gịnị kpatara?"]
+        ["Who","Nani","Tani","Onye"],
+        ["What","Nini","Kini","Kedu"],
+        ["When","Lini","Nigbawo","Mgbe ole"],
+        ["Where","Wapi","Nibo","Ebee"],
+        ["Why","Kwa nini","Kí nìdí","Gịnị kpatara"]
     ],
     "Places":[
         ["School","Shule","Ile-iwe","Ụlọ akwụkwọ"],
