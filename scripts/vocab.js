@@ -68,13 +68,13 @@ function displayVocab(){
 
                 if(score <= .25){
                     document.getElementById("completeStarsVocab").setAttribute("src","assets/other/1star.png");
-                    setScore(setName,1);
+                    setScore(`${setName}:${localStorage.getItem("knownLang")}:${localStorage.getItem("learnLang")}`,1);
                 }
                 else if(score >= .9){
                     document.getElementById("completeStarsVocab").setAttribute("src","assets/other/3star.png");
-                    setScore(setName,3);
+                    setScore(`${setName}:${localStorage.getItem("knownLang")}:${localStorage.getItem("learnLang")}`,3);
                 }
-                else setScore(setName,2);
+                else setScore(`${setName}:${localStorage.getItem("knownLang")}:${localStorage.getItem("learnLang")}`,2);
 
 
 
@@ -206,7 +206,4 @@ function nextVocab(){
     
 }
 
-
-
-
-startVocab("Common Phrases");
+//startVocab("Places");

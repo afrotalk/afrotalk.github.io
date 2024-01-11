@@ -43,6 +43,7 @@
             <img id="closeButton" onclick="fadeReload()" src="assets/svg/close.svg" style="display: none;" class="desktop">
 
 
+
             <!-- VOCAB PAGE -->
             <div id="vocabPage" class="page">
                 <div id="vocabGameplay">
@@ -81,6 +82,19 @@
                     
                 </div>
 
+            </div>
+
+            <!-- VOCAB SELECT PAGE -->
+            <div id="vocabSelectPage" class="page">
+                <div class="pageHeader">
+                    <h1 id="vocabHeader">Vocabulary</h1>
+                    <p id="vocabDesc">Learn new words and phrases!</p>
+                    
+                </div>
+
+                <div id="vocabSelectHolder">
+
+                </div>
             </div>
 
             <!-- CONVERSATION PAGE -->
@@ -125,7 +139,7 @@
                     <br><br><br>
                     
                     <div style="display: flex;">
-                        <button class="endButton" onclick="fadeReload()" style="opacity: 0;">Continue</button>
+                        <button class="endButton" id="endConvoButton" onclick="fadeReload()" style="opacity: 0;">Continue</button>
                     </div>
                     
                 </div>
@@ -157,12 +171,13 @@
         <script src="scripts/choose-language.js"></script>
         <script src="scripts/local-storage-vars.js"></script>
         <script src="scripts/translate.js"></script>
-        <script src="scripts/app.js"></script>
+        <script src="scripts/convo-list.js"></script>
         <script src="scripts/convo.js"></script>
         <script src="scripts/convo-select.js"></script>
         <script src="scripts/vocab-list.js"></script>
         <script src="scripts/vocab.js"></script>
-        <script>//if(!choosingLang)openPage("convoSelectPage")</script>
+        <script src="scripts/vocab-select.js"></script>
+        <script>if(!choosingLang)openPage("convoSelectPage")</script>
 
         
         

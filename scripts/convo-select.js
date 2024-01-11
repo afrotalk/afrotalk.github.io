@@ -31,7 +31,7 @@ for(let i of ["A1","A2","B1","B2"]){
 
 
         document.getElementById("selectHolder").innerHTML += `
-        <button class='convoOption'onclick="startConvo(\`${i}\`,\`${j}\`,${localStorage.getItem('learnLang')},${localStorage.getItem('knownLang')})">
+        <button class='convoOption' onclick="startConvo(\`${i}\`,\`${j}\`,${localStorage.getItem('learnLang')},${localStorage.getItem('knownLang')})">
             <img class="characterHead" src="${heads[i]}">
             <div>
                 <h2>${translations[j][parseInt(localStorage.getItem("knownLang"))]}</h2>
