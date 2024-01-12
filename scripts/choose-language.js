@@ -36,6 +36,8 @@ function chooseLanguage(){
                 </div>
             `
         }
+        // hide navbar
+        document.getElementById("navbar").style["display"] = "none";
     },FADESPEED)
 }
 
