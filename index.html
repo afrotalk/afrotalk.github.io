@@ -31,7 +31,7 @@
 
             <div id="navbar">
                 <div id="navbarContent">
-                    <img src="assets/logo/logo.png">
+                    <img src="assets/logo/logo.png" style="opacity:1">
                     <div></div>
                     <img id="navbarVocab" src="assets/navigation/apple.png" onclick="openPage('vocabSelectPage')">
                     <img id="navbarConvo" src="assets/navigation/chat.png" onclick="openPage('convoSelectPage')">
@@ -163,9 +163,12 @@
                 <br><br>
                     <h2 class="logo" style="text-align: center;"><img src='assets/logo/logo.png'>AfroTalk</h2>
                 <br>
-                <div id="languageHolder">
+                <div id="languageHolder"></div>
             </div>
 
+        <div style="height: 10vh;"></div>
+
+        <script>const langFlags = ["usa.png","tanzania.png","nigeria.png","nigeria.png"];</script>
         <script src="scripts/page-system.js"></script>
         <script src="scripts/choose-language.js"></script>
         <script src="scripts/local-storage-vars.js"></script>
@@ -180,7 +183,6 @@
             if(!choosingLang){
                 openPage("convoSelectPage");
                 //set flag on navbar
-                const langFlags = ["usa.png","tanzania.png","nigeria.png","nigeria.png"];
                 document.getElementById("navbarFlag").setAttribute("src", "assets/flags/" + langFlags[parseInt(localStorage.getItem("learnLang"))]);
 
             }

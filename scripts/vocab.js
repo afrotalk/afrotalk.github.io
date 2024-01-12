@@ -32,7 +32,9 @@ function displayVocab(){
 
     // set progress bar
     let barWidth = Math.max(.0, (2*vocab[setName].length - setOrder.length)/(2*vocab[setName].length)) * 100;
-    document.getElementById("progressBarPercentVocab").style["width"] = barWidth + "%";
+    
+    if(barWidth != 100) document.getElementById("progressBarPercentVocab").style["width"] = barWidth + "%";
+    else document.getElementById("progressBarPercentVocab").style["width"] = "";
     
 
 
@@ -117,7 +119,7 @@ function displayVocab(){
 
 
     const vocabWord = setOrder[0][0][og]; // word to be translated
-    document.getElementById("vocabWord").innerHTML = `Translate: "${vocabWord}"`;
+    document.getElementById("vocabWord").innerHTML = `<img src='assets/flags/${langFlags[og]}'>${translations["translate"][parseInt(localStorage.getItem("knownLang"))]}: "${vocabWord}"`;
 
     const correct = setOrder[0][0][tran]; // the correct translation
     let wrong = []; // list of wrong translations

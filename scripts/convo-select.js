@@ -15,8 +15,11 @@ const colors = {
     "B2":"--pretty-red"
 }
 
+const totalConvos = Object.keys(conversations["A1"]).length + Object.keys(conversations["A2"]).length + Object.keys(conversations["B1"]).length + Object.keys(conversations["B2"]).length;
+
 let convoInd = 0;
 for(let i of ["A1","A2","B1","B2"]){
+    
     for(j of Object.keys(conversations[i])){
 
         //get score
@@ -42,7 +45,7 @@ for(let i of ["A1","A2","B1","B2"]){
         </button>
         `;
 
-        if(i != 'B2' || i == 'B2'){
+        if(convoInd != totalConvos-1){
             let dotAmt = 2;
             if(convoInd % 4  == 0 && convoInd != 0)dotAmt = 3;
             for(let j = 0; j < dotAmt; j++){

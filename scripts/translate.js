@@ -4,6 +4,7 @@ const translations = {
     "complete":["Complete!","Kamili!","Pari!","Zuru oke!"],
     "conversations":["Conversations","Maongezi","Itakuroso","Ikori"],
     "convoDesc":["Practice your speaking skills in real-life situations!","Fanya mazoezi ya ustadi wako wa kuzungumza katika hali halisi ya maisha!","Ṣe adaṣe awọn ọgbọn sisọ rẹ ni awọn ipo gidi-aye!","Zụlite nkà ikwu okwu gị n'ọnọdụ dị adị n'ezie!"],
+    "translate":["Translate","Kutafsiri","Tumọ","Sụgharịa"],
     //conversations
     "Greetings!":["Greetings!","Salamu!","E Ki!","Kwuo Ndewo!"],
     "How Many Siblings?":["How Many Siblings?","Ndugu Wangapi?","Awon Arakunrin Melo Ni?","Umunne Ole?"],

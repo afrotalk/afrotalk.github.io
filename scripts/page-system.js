@@ -21,9 +21,9 @@ function openPage(page){
         fadeCover.style["pointer-events"] = "none";
 
         if(page in pageIcons){
-            for(j in pageIcons) document.getElementById(pageIcons[j]).style["background"] = "";
-            document.getElementById(pageIcons[page]).style["background"] = "var(--light-transp-blue)";
-            document.getElementById(pageIcons[page]).style["pointer-events"] = "var(--none)";
+            for(j in pageIcons) document.getElementById(pageIcons[j]).style["opacity"] = "";
+            document.getElementById(pageIcons[page]).style["opacity"] = "1";
+            document.getElementById(pageIcons[page]).style["pointer-events"] = "none";
         }
 
     }, FADESPEED);
