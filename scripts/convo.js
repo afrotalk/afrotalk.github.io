@@ -83,6 +83,7 @@ function displayConvo(){
             openPage("convoPage");
             setTimeout(function(){
 
+                document.getElementById("closeButton").style["display"] = "none";
                 document.getElementById("dialogueHolder").style["display"] = "none";
                 document.getElementById("barHolder").style["display"] = "none";
                 document.getElementById("convoComplete").style["display"] = "block";

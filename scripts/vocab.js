@@ -43,6 +43,7 @@ function displayVocab(){
         setTimeout(function(){
             openPage("vocabPage");
             setTimeout(function(){
+                document.getElementById("closeButton").style["display"] = "none";
                 document.getElementById("progressBarPercentVocab").style["width"] = "";
                 document.getElementById("vocabGameplay").style["display"] = "none";
                 document.getElementById("vocabComplete").style["display"] = "";
