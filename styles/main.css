@@ -60,6 +60,7 @@ body{
     cursor: pointer;
     transition: .25s;
     padding:5px;
+    border-radius: 12px;
 }
 
 #navbar img:hover{
@@ -69,7 +70,7 @@ body{
 #navbarFlag{
     height: 35px !important;
     border: 4px solid;
-    border-radius: 12px;
+    border-radius: 12px !important;
     padding:0 !important;
     margin-right: 5px;
     margin-left: 5px;
