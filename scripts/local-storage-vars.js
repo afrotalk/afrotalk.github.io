@@ -1,4 +1,8 @@
 let choosingLang = false;
+
+// last navigated page
+if(localStorage.getItem("lastPage") == null) localStorage.setItem("lastPage","vocabSelectPage");
+
 // languages
 if(localStorage.getItem("knownLang") == null || localStorage.getItem("learnLang") == null){
     chooseLanguage();

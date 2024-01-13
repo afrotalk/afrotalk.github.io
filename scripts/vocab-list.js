@@ -57,11 +57,11 @@ const vocab = {
         ["Bicycle","Baiskeli","Keke","Ịnyịnya igwe"],
         ["Basketball","Mpira wa Kikapu","Bọọlu inu agbọn","Bọọlụ basketball"],
         ["Football","Kandanda","Bọọlu afẹsẹgba","Egwuregwu bọọlụ"],
-        ["Walk","Tembea","Rìn","Gaa ije"]
+        ["Walk","Tembea","Rìn","Gaa ije"],
         ["Run","Kimbia","Ṣiṣe","Gbaa ọsọ"],
         ["Swim","Kuogelea","We","igwu mmiri"],
         ["Dance","Ngoma","Ijó","Agba egwu"],
-        ["Play","Cheza","Ṣiṣẹ","Gwuo"],
+        ["Play","Cheza","Ere","Gwuo"],
         ["Sing","Imba","Kọrin","Abụ"],
         ["Game","Mchezo","Ere","Egwuregwu"],
         ["Videogame","Mchezo wa video","Ere fidio","Egwuregwu vidiyo"],
@@ -70,7 +70,7 @@ const vocab = {
         ["Read","Soma","Ka","Gụọ"],
         ["Book","Kitabu","Iwe","Akwụkwọ"]
     ],
-    "Transporation":[
+    "Travel":[
         ["Car","Gari","Ọkọ ayọkẹlẹ","Ụgbọ ala"],
         ["Bus","Basi","Ọkọ akero","Ụgbọ ala"],
         ["Plane","Ndege","Ofurufu","Ụgbọ elu"],

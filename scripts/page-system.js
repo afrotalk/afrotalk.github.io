@@ -21,7 +21,13 @@ function openPage(page){
         fadeCover.style["pointer-events"] = "none";
 
         if(page in pageIcons){
-            for(j in pageIcons) document.getElementById(pageIcons[j]).style["opacity"] = "";
+
+            localStorage.setItem("lastPage",page);
+
+            for(j in pageIcons){
+                document.getElementById(pageIcons[j]).style["opacity"] = "";
+                document.getElementById(pageIcons[j]).style["pointer-events"] = "";
+            }
             document.getElementById(pageIcons[page]).style["opacity"] = "1";
             document.getElementById(pageIcons[page]).style["pointer-events"] = "none";
         }

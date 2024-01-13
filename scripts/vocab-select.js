@@ -8,10 +8,11 @@ for(let j in vocab){
         else starStr += "<img class='tinyStar' src='assets/other/tiny-star.png'>";
     }
 
+    console.log(j);
     document.getElementById("vocabSelectHolder").innerHTML += `
         <div class="convoOption" onclick="startVocab('${j}')" style="max-width:200px">
             <div style='display:grid;width:100%;justify-items:center'>
-                <h2 style='text-align:center'>${j}</h2>
+                <h2 style='text-align:center'>${translations[j][parseInt(localStorage.getItem("knownLang"))]}</h2>
                 <div class='starHolder'>
                     ${starStr}
                 </div>

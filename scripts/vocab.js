@@ -19,6 +19,13 @@ function startVocab(list){
 
     setOrder = shuffle(setOrder);
 
+    // translations
+    const knownLang = parseInt(localStorage.getItem("knownLang"));
+    translate("continueButtonVocab","continue",knownLang);
+    translate("completeHeaderVocab","complete",knownLang);
+    translate("endVocabButton","continue",knownLang);
+
+
     // hide the navbar
     setTimeout(function(){
         document.getElementById("navbar").style["display"] = "none";

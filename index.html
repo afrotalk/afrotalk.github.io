@@ -181,7 +181,7 @@
         <script src="scripts/vocab-select.js"></script>
         <script>
             if(!choosingLang){
-                openPage("convoSelectPage");
+                openPage(localStorage.getItem("lastPage"));
                 //set flag on navbar
                 document.getElementById("navbarFlag").setAttribute("src", "assets/flags/" + langFlags[parseInt(localStorage.getItem("learnLang"))]);
 

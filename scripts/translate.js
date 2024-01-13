@@ -17,7 +17,16 @@ const translations = {
     "New Dog!":["New Dog!","Mbwa Mpya!","Aja Tuntun!","Nkita Ohuru!"],
     "Do You Like to Read?":["Do You Like to Read?","Je, Unapenda Kusoma?","Se O Nife Lati Ka?","Ọ Na-amasi Gi Igu?"],
     "Help the Planet!":["Help the Planet!","Saidia Sayari!","Gba Ile Aye!","Nyere Uwa!"],
-    "Where are You From?":["Where are You From?","Unatoka Wapi?","Nibo Ni O Ti Wa?","Ebee Ka I Si?"]
+    "Where are You From?":["Where are You From?","Unatoka Wapi?","Nibo Ni O Ti Wa?","Ebee Ka I Si?"],
+    //vocab
+    "Common Phrases":["Common Phrases","Maneno Ya Kawaida","Awon Gbolohun Ti O Wopo","Akpaokwu Nkiti"],
+    "Places":["Places","Maeneo","Awon ibi","Ebe"],
+    "Family":["Family","Familia","Ebi","Ezinulo"],
+    "People":["People","Watu","Eniyan","Ndi mmadu"],
+    "Activities":["Activities","Shughuli","Awon Ise-sise","Ihe Omume"],
+    "Travel":["Travel","Shughuli","Ajo","Ihe Omume","Njem"],
+    "Numbers and Time":["Numbers and Time","Nambari Na Wakati","Awon Nomba Ati Akoko","Nomba Na Oge"],
+    "School":["School","Shule","Ile-iwe","Ulo Akwukwo"]
 
 }
 
