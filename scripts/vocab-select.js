@@ -8,7 +8,6 @@ for(let j in vocab){
         else starStr += "<img class='tinyStar' src='assets/stars/tiny-star.png'>";
     }
 
-    console.log(j);
     document.getElementById("vocabSelectHolder").innerHTML += `
         <div class="convoOption" onclick="startVocab('${j}')" style="max-width:200px">
             <div style='display:grid;width:100%;justify-items:center'>
