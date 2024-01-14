@@ -77,11 +77,11 @@ function displayVocab(){
                 let score = 1 - (missed/total);
 
                 if(score <= .25){
-                    document.getElementById("completeStarsVocab").setAttribute("src","assets/other/1star.png");
+                    document.getElementById("completeStarsVocab").setAttribute("src","assets/stars/1star.png");
                     setScore(`${setName}:${localStorage.getItem("knownLang")}:${localStorage.getItem("learnLang")}`,1);
                 }
                 else if(score >= .9){
-                    document.getElementById("completeStarsVocab").setAttribute("src","assets/other/3star.png");
+                    document.getElementById("completeStarsVocab").setAttribute("src","assets/stars/3star.png");
                     setScore(`${setName}:${localStorage.getItem("knownLang")}:${localStorage.getItem("learnLang")}`,3);
                 }
                 else setScore(`${setName}:${localStorage.getItem("knownLang")}:${localStorage.getItem("learnLang")}`,2);
