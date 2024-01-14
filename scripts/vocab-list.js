@@ -103,7 +103,7 @@ const vocab = {
         ["Summer","Majira ya joto","Igba ooru","N'oge okpomọkụ"],
         ["Autumn","Vuli","Isubu","Mgbụsị akwụkwọ"],
         ["Morning","Asubuhi","Owurọ","Ututu"],
-        ["Afternoon","Mchana","Friday","N'ehihie"],
+        ["Afternoon","Mchana","Ọsan","N'ehihie"],
         ["Evening","Jioni","Irọlẹ","Mbubreyo"],
         ["Night","Usiku","Oru","Abali"]
     ],

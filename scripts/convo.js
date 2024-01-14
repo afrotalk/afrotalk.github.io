@@ -103,11 +103,11 @@ function displayConvo(){
                 let score = 2;
                 const stars =  document.getElementById("completeStars");
                 if(wrongCnt == curConvo.length){
-                    stars.setAttribute("src","assets/other/1star.png");
+                    stars.setAttribute("src","assets/stars/1star.png");
                     score = 1;
                 }
                 else if(wrongCnt == 0){
-                    stars.setAttribute("src","assets/other/3star.png");
+                    stars.setAttribute("src","assets/stars/3star.png");
                     score = 3;
                 }
 

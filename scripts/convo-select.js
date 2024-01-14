@@ -26,8 +26,8 @@ for(let i of ["A1","A2","B1","B2"]){
         let starStr = ""
         const score = getScore(`${j}:${localStorage.getItem("knownLang")}:${localStorage.getItem("learnLang")}`);
         for(let k = 0; k < 3; k++){
-            if(k >= score) starStr += "<img class='tinyStar' src='assets/other/tiny-star-emp.png'>";
-            else starStr += "<img class='tinyStar' src='assets/other/tiny-star.png'>";
+            if(k >= score) starStr += "<img class='tinyStar' src='assets/stars/tiny-star-emp.png'>";
+            else starStr += "<img class='tinyStar' src='assets/stars/tiny-star.png'>";
         }
 
         

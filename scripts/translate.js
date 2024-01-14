@@ -4,6 +4,8 @@ const translations = {
     "complete":["Complete!","Kamili!","Pari!","Zuru oke!"],
     "conversations":["Conversations","Maongezi","Itakuroso","Ikori"],
     "convoDesc":["Practice your speaking skills in real-life situations!","Fanya mazoezi ya ustadi wako wa kuzungumza katika hali halisi ya maisha!","Ṣe adaṣe awọn ọgbọn sisọ rẹ ni awọn ipo gidi-aye!","Zụlite nkà ikwu okwu gị n'ọnọdụ dị adị n'ezie!"],
+    "vocab":["Vocabulary","Msamiati","Fokabulari","Okwu"],
+    "vocabDesc":["Learn new words and phrases!","Jifunze maneno na misemo mpya!","Kọ ẹkọ awọn ọrọ titun ati awọn gbolohun ọrọ!","Mụta okwu na akpaokwu ọhụrụ!"],
     "translate":["Translate","Kutafsiri","Tumọ","Sụgharịa"],
     //conversations
     "Greetings!":["Greetings!","Salamu!","E Ki!","Kwuo Ndewo!"],
@@ -37,4 +39,6 @@ function translate(element, meaning, lang){
 if(localStorage.getItem("learnLang") != null){
     translate("convoHeader","conversations",parseInt(localStorage.getItem("knownLang")));
     translate("convoDesc","convoDesc",parseInt(localStorage.getItem("knownLang")));
+    translate("vocabHeader","vocab",parseInt(localStorage.getItem("knownLang")));
+    translate("vocabDesc","vocabDesc",parseInt(localStorage.getItem("knownLang")));
 }

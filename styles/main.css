@@ -85,7 +85,6 @@ body{
 
 .logo{
     margin:20px;
-    cursor: pointer;
 }
 
 .logo img{
@@ -463,6 +462,7 @@ body{
 }
 
 
+/* MOBILE */
 .mobile{
     display: none;
 }
@@ -473,6 +473,8 @@ body{
     .desktop{
         display: none !important;
     }
+
+    /* convo and vocab pages */
 
     #convoPage,#vocabPage{
         border:none;
@@ -500,12 +502,25 @@ body{
     #progressBar,#progressBarVocab{
         margin:0;      
     }
+    #vocabWord{
+        margin-top:50px;
+    }
+
+    /* navbar */
 
     #navbar{
         border-radius: 15px;
     }
 
-    #vocabWord{
-        margin-top:50px;
+    /* hover effects */
+    .languageChoice:hover{
+        transform: none;
+        box-shadow: 0 10px;
     }
+
+    #navbar img:hover{
+        transform: none;
+    }
+
+   
 }
