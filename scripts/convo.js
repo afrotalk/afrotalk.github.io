@@ -83,6 +83,7 @@ function displayConvo(){
             openPage("convoPage");
             setTimeout(function(){
 
+            
                 document.getElementById("closeButton").style["display"] = "none";
                 document.getElementById("dialogueHolder").style["display"] = "none";
                 document.getElementById("barHolder").style["display"] = "none";
@@ -241,7 +242,7 @@ function nextDialogue(){
             dialogueHolder.style["transition"] = ".6s";
             dialogueHolder.style["transform"] = "";
             if(curInd != curConvo.length)dialogueHolder.style["opacity"] = "1";
-            document.documentElement.scrollTop = 0;
+            //document.documentElement.scrollTop = 0;
 
         },50);
         

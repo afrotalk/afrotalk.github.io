@@ -16,13 +16,13 @@ const conversations = {
             [
                 ["Hi!", "Habari!","Bawo ni!","Ndewo!"],
                 ["Hello!", "Habari!","Bawo ni!","Nnọọ!"],
-                ["Hey!","Habari!","Hey!","Hey!"],
+                ["Hey!","Habari!","Bawo ni.","Bawo ni."],
                 ["Good morning!", "Habari za asubuhi!","E kaaro!","Ụtụtụ ọma!"]
             ],
             [
                 ["Hi!", "Habari!","Bawo ni!","Ndewo!"],
                 ["Hello!", "Habari!","Bawo ni!","Nnọọ!"],
-                ["Hey!","Habari!","Hey!","Hey!"],
+                ["Hey!","Habari!","Bawo ni.","Bawo ni."],
                 ["Good morning!", "Habari za asubuhi!","E kaaro!","Ụtụtụ ọma!"]
             ],
 
