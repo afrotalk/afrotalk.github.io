@@ -242,7 +242,7 @@ function nextDialogue(){
             dialogueHolder.style["transition"] = ".6s";
             dialogueHolder.style["transform"] = "";
             if(curInd != curConvo.length)dialogueHolder.style["opacity"] = "1";
-            //document.documentElement.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
 
         },50);
         
