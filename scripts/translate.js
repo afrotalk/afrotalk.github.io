@@ -19,7 +19,7 @@ const translations = {
     "New Dog!":["New Dog!","Mbwa Mpya!","Aja Tuntun!","Nkita Ohuru!","Sabon Kare!"],
     "Do You Like to Read?":["Do You Like to Read?","Je, Unapenda Kusoma?","Se O Nife Lati Ka?","Ọ Na-amasi Gi Igu?","Kuna Son Karatu?"],
     "Help the Planet!":["Help the Planet!","Saidia Sayari!","Gba Ile Aye!","Nyere Uwa!","Taimaka wa Duniya!"],
-    "Where are You From?":["Where are You From?","Unatoka Wapi?","Nibo Ni O Ti Wa?","Ebee Ka I Si?","Taimaka wa Duniya!"],
+    "Where are You From?":["Where are You From?","Unatoka Wapi?","Nibo Ni O Ti Wa?","Ebee Ka I Si?","Daga ina kake?"],
     //vocab
     "Common Phrases":["Common Phrases","Maneno Ya Kawaida","Awon Gbolohun Ti O Wopo","Akpaokwu Nkiti","Kalmomin gama-gari"],
     "Places":["Places","Maeneo","Awon ibi","Ebe","Wurare"],
