@@ -11,7 +11,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css?family=Poppins:400,600,800" rel="stylesheet">
 
-        <!-- our stylesheet-->
+        <!-- PWA functionality-->
+        <link rel="canonical" href="https://afrotalk.github.io/" />
+        <link rel="manifest" href="/manifest.webmanifest">
+
+        <!-- stylesheet-->
         <link rel="stylesheet" href="styles/main.css">
 
         <link rel="icon" href="assets/logo/logo.png">
@@ -36,6 +40,7 @@
                     <img id="navbarVocab" src="assets/navigation/apple.png" onclick="openPage('vocabSelectPage')">
                     <img id="navbarConvo" src="assets/navigation/chat.png" onclick="openPage('convoSelectPage')">
                     <img id="navbarFlag" src="assets/flags/usa.png" onclick="chooseLanguage()">
+                    <img id="navbarDownload" src="assets/navigation/download.png">
                 </div>
             </div>
 
@@ -190,6 +195,23 @@
                 document.getElementById("navbarFlag").setAttribute("src", "assets/flags/" + langFlags[parseInt(localStorage.getItem("learnLang"))]);
 
             }
+
+            // PWA download functionality
+            let deferredPrompt;
+            window.addEventListener('beforeinstallprompt', (e) => {
+                deferredPrompt = e;
+            });
+
+            const installButton = document.getElementById('navbarDownload');
+            installButton.addEventListener('click', async () => {
+                if (deferredPrompt !== null) {
+                    deferredPrompt.prompt();
+                    const { outcome } = await deferredPrompt.userChoice;
+                    if (outcome === 'accepted') {
+                        deferredPrompt = null;
+                    }
+                }
+            });
             
         </script>
 

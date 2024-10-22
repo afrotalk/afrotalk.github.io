@@ -1,0 +1,26 @@
+{
+
+    "name": "AfroTalk: Learn African Languages",
+    "short_name": "AfroTalk",
+
+    "description": "A language learning app specifically for African languages",
+   
+
+    "scope": "/",
+    "start_url": "/",
+   
+
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+
+    "display": "standalone", 
+   
+
+    "icons": [
+        {
+          "src": "/assets/logo/pwaLogo700.png",
+          "type": "image/png",
+          "sizes": "700x700"
+        }
+    ]
+  }
