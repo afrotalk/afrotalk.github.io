@@ -521,6 +521,10 @@ body{
     }
 
     #navbar img{ height:42px;}
+    #navbarFlag{
+        height: 30px !important;
+        border: 3px solid;
+    }
 
     /* hover effects */
     .languageChoice:hover{
