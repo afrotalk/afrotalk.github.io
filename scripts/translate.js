@@ -1,4 +1,6 @@
+// order: english, swahili, yoruba, igbo, hausa
 const translations = {
+    // ui text
     "choose an option":["Choose an option:","Chagua chaguo:","Yan aṣayan kan:","Họrọ nhọrọ:","Zaɓi kuma zaɓi:"],
     "continue":["Continue","Endelea","Tesiwaju","Gaa n'ihu","Ci gaba"],
     "complete":["Complete!","Kamili!","Pari!","Zuru oke!","Kammala!"],
@@ -7,6 +9,7 @@ const translations = {
     "vocab":["Vocabulary","Msamiati","Fokabulari","Okwu","Kalmomi"],
     "vocabDesc":["Learn new words and phrases!","Jifunze maneno na misemo mpya!","Kọ ẹkọ awọn ọrọ titun ati awọn gbolohun ọrọ!","Mụta okwu na akpaokwu ọhụrụ!","Koyi sababbin kalmomi da jimloli!"],
     "translate":["Translate","Kutafsiri","Tumọ","Sụgharịa","Fassara"],
+    "disclaimer":["*Translations powered by Google Translate","*Tafsiri zinazoendeshwa na Google Tafsiri", "*Awọn itumọ ti agbara nipasẹ Google Tumọ", "*Google Translate kwadoro ntụgharị asụsụ", "*Google Translate yana ƙarfafa fassarar"],
     //conversations
     "Greetings!":["Greetings!","Salamu!","E Ki!","Kwuo Ndewo!","Gaisuwa!"],
     "How Many Siblings?":["How Many Siblings?","Ndugu Wangapi?","Awon Arakunrin Melo Ni?","Umunne Ole?","Yan Uwa Nawa?"],
@@ -37,8 +40,12 @@ function translate(element, meaning, lang){
 }
 
 if(localStorage.getItem("learnLang") != null){
+    // translate all of the UI text
     translate("convoHeader","conversations",parseInt(localStorage.getItem("knownLang")));
     translate("convoDesc","convoDesc",parseInt(localStorage.getItem("knownLang")));
     translate("vocabHeader","vocab",parseInt(localStorage.getItem("knownLang")));
     translate("vocabDesc","vocabDesc",parseInt(localStorage.getItem("knownLang")));
+
+    translate("disclaimer1","disclaimer",parseInt(localStorage.getItem("knownLang")));
+    translate("disclaimer2","disclaimer",parseInt(localStorage.getItem("knownLang")));
 }
