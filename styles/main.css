@@ -520,6 +520,8 @@ body{
         border-radius: 15px;
     }
 
+    #navbar img{ height:42px;}
+
     /* hover effects */
     .languageChoice:hover{
         transform: none;
