@@ -10,8 +10,8 @@
     "start_url": "/",
    
 
-    "background_color": "#ffffff",
-    "theme_color": "#ffffff",
+    "background_color": "#f2f2f7",
+    "theme_color": "#f2f2f7",
 
     "display": "standalone", 
    
