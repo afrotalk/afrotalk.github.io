@@ -204,6 +204,11 @@
 
             const installButton = document.getElementById('navbarDownload');
             installButton.addEventListener('click', async () => {
+                // check if ios first, cuz of their weird PWA rules
+                if (['iPad Simulator','iPhone Simulator','iPod Simulator','iPad','iPhone','iPod'].includes(navigator.platform) || (navigator.userAgent.includes("Mac") && "ontouchend" in document)){
+                    alert("It looks like you're on an IOS device, which doesn't allow direct downloads from the web. Instead, you should hit the share button, and then \"Add to Home Screen\".");
+                    return;
+                }
                 if (deferredPrompt !== null) {
                     deferredPrompt.prompt();
                     const { outcome } = await deferredPrompt.userChoice;
